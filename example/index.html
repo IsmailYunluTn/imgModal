@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İmg Modal Example</title>
+    <link rel="stylesheet" href="../imgModal.css">
+</head>
+<body>
+    <img id="img1" src="https://picsum.photos/300/300" alt="Random image">
+    <img id="img2" src="https://picsum.photos/id/3/300/300" alt="image 2">
+    <script src="../imgModal.js"></script>
+    <script>
+        imgModal(["#img1", "#img2"]);
+        //imgModal(["#img1", "#img2", false]); No caption
+    </script>
+</body>
+</html>
