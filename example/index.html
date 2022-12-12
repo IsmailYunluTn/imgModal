@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="../imgModal.css">
 </head>
 <body>
-    <img id="img1" src="https://picsum.photos/300/300" alt="Random image">
-    <img id="img2" src="https://picsum.photos/id/3/300/300" alt="image 2">
+    <div class="imgs">
+        <img id="randomImg" src="https://picsum.photos/300/300" alt="Random image">
+        <img id="img2" src="https://picsum.photos/id/3/600/600" alt="image 2">
+    </div>
+    
     <script src="../imgModal.js"></script>
     <script>
-        imgModal(["#img1", "#img2"]);
-        //imgModal(["#img1", "#img2", false]); No caption
+        imgModal(document.querySelectorAll(".imgs img"));
+        //imgModal([document.getElementById("randomImg")]); Single img
+        //imgModal(document.querySelectorAll(".imgs img"), false); No caption
     </script>
 </body>
 </html>
